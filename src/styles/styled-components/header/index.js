@@ -7,20 +7,23 @@ export const Header = styled.header`
     width: 100%;
     background-color: ${props => props.theme.colors.whitebg};
     border-bottom: solid 1px ${props => props.theme.colors.softGray};
-
-    span{
-
+    height: 75px;
+    overflow: hidden;
+    #teste{
+        display: flex;
+        align-items: center;
+        overflow: hidden;
+        height: inherit;
     }
     ul{
+        width: 100%;
         display: flex;
         gap: 2rem;
-        padding:  1rem;
         
         li{
             font-weight: 500;
-            padding:  1rem;
             cursor: pointer;
-
+            padding:  1rem;
         }
         li:hover{
             background-color: ${props => props.theme.colors.softBlue};
@@ -37,6 +40,7 @@ export const Header = styled.header`
         align-items: center;
         justify-content: center;
         cursor: pointer;
+        display: none;
 
        &:before{
             content: "";
@@ -47,7 +51,30 @@ export const Header = styled.header`
             top: 50%;
             transform: translateY(-50%);
             box-shadow: 0 10px, 0 -10px;
+            
         }
     }
-`
+    
+    @keyframes fade-out-nav {
+        from{
+            transform: translate(0px);
+            opacity: 1;
+        }
+        to{
+            transform: translate(300px);
+            opacity: 0;
+            display: none;
+        }
+    }
+    @media screen and (max-width:781px) {
+    ul{
+        li{
+            animation: fade-out-nav .5s forwards;
+           }
+        }
+        div{
+            display: block;
+        }
+    }
+    `
 

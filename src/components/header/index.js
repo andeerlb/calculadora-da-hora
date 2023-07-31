@@ -19,14 +19,16 @@ export function Header() {
             <span>
                 calculadora-da-hora_Logo
             </span>
-            <nav>
-                <ul>
-                    <li>pageName</li>
-                    <li>pageName</li>
-                    <li>pageName</li>
-                </ul>
-            </nav>
-            <div />
+            <span id='teste'>
+                <nav>
+                    <ul>
+                        <li>pageName</li>
+                        <li>pageName</li>
+                        <li>pageName</li>
+                    </ul>
+                </nav>
+                <div />
+            </span>
             <ToggleTheme />
         </Styled.Header>
     )
