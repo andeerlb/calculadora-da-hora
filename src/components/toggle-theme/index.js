@@ -1,6 +1,6 @@
 import React from 'react'
-import { WiDaySunny } from 'react-icons/wi';
-import { Styled } from '../../styles';
+import { BsSun, BsMoonFill } from "react-icons/bs";
+import { LightTheme, Styled } from '../../styles';
 import { useThemeProvider } from '../../contexts/theme-context';
 
 function CustomButton({ customName = '', Icon, size, onClick = () => { } }) {
@@ -12,11 +12,11 @@ function CustomButton({ customName = '', Icon, size, onClick = () => { } }) {
     )
 }
 export function ToggleTheme() {
-    const { toggleTheme } = useThemeProvider();
+    const { toggleTheme, theme } = useThemeProvider();
 
     return (
         <CustomButton
-            Icon={WiDaySunny}
+            Icon={theme === LightTheme ? BsMoonFill : BsSun}
             size={22}
             onClick={toggleTheme}
         />

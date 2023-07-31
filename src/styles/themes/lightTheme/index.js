@@ -4,7 +4,7 @@ export const LightTheme = {
         primaryBg: 'rgb(246, 248, 255)',
         whitebg: 'rgb(255, 255, 255)',
         // midDark: '#151515', //# 242424
-        fontWhite: 'rgba(255, 255, 255)',
+        fontWhite: '#151515',
         // white: '#fff',
         // midBlue: '#3463bb',
         softBlue: '#6495ed',

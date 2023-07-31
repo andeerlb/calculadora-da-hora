@@ -2,17 +2,31 @@ import React from 'react'
 import { Styled } from '../../styles'
 import { ToggleTheme } from '../toggle-theme'
 
+function NavBar({ pageName = 'pageName' }) {
+    return (
+        <nav>
+            <ul>
+                <li>{pageName}</li>
+                <li>{pageName}</li>
+                <li>{pageName}</li>
+            </ul>
+        </nav>
+    )
+}
 export function Header() {
     return (
         <Styled.Header>
             <span>
                 calculadora-da-hora_Logo
             </span>
-            <ul>
-                <li>teste</li>
-                <li>teste1</li>
-                <li>teste2</li>
-            </ul>
+            <nav>
+                <ul>
+                    <li>pageName</li>
+                    <li>pageName</li>
+                    <li>pageName</li>
+                </ul>
+            </nav>
+            <div />
             <ToggleTheme />
         </Styled.Header>
     )

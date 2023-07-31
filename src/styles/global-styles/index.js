@@ -7,9 +7,9 @@ export const GlobalStyles = createGlobalStyle`
         box-sizing: border-box;
         list-style: none;
         font-family: 'Plus Jakarta Sans', sans-serif;
+        color: ${props => props.theme.colors.fontWhite};
     }
 
     body{
-        
     }
 `
