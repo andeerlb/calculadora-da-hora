@@ -1,5 +1,6 @@
 import React from 'react'
 import { Styled } from '../../styles'
+import { ToggleTheme } from '../toggle-theme'
 
 export function Header() {
     return (
@@ -12,6 +13,7 @@ export function Header() {
                 <li>teste1</li>
                 <li>teste2</li>
             </ul>
+            <ToggleTheme />
         </Styled.Header>
     )
 }
