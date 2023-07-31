@@ -4,7 +4,14 @@ import { Styled } from '../../styles'
 export function Header() {
     return (
         <Styled.Header>
-            hey
+            <span>
+                calculadora-da-hora_Logo
+            </span>
+            <ul>
+                <li>teste</li>
+                <li>teste1</li>
+                <li>teste2</li>
+            </ul>
         </Styled.Header>
     )
 }
