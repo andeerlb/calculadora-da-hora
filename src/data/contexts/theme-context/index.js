@@ -1,5 +1,5 @@
 import * as React from "react";
-import { LightTheme, DarkTheme } from '../../styles/'
+import { LightTheme, DarkTheme } from '../../../styles'
 const ThemeContext = React.createContext({});
 
 export function MyThemeProvider({ children }) {
