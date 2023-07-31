@@ -1,7 +1,7 @@
 import React from 'react'
 import { BsSun, BsMoonFill } from "react-icons/bs";
-import { LightTheme, Styled } from '../../styles';
-import { useThemeProvider } from '../../contexts/theme-context';
+import { LightTheme, Styled } from '../../../styles';
+import { useThemeProvider } from '../../../data/contexts/theme-context';
 
 function CustomButton({ customName = '', Icon, size, onClick = () => { } }) {
     return (
