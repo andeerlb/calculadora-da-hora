@@ -1,5 +1,5 @@
 import './App.css';
-import HourCalculator from './components/HourCalculator';
+import HourCalculator from './ui/components/HourCalculator';
 
 function App() {
   return (
