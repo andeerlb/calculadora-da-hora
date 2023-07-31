@@ -24,6 +24,6 @@ export function MyThemeProvider({ children }) {
 };
 
 export function useThemeProvider() {
-    const context = React.useContext(ThemeContext);
-    return context;
+    React.useContext(ThemeContext);
+    return React.useContext(ThemeContext);;
 }
