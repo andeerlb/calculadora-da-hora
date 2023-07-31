@@ -1,8 +1,8 @@
-export const LightTheme = {
+export const DarkTheme = {
     colors: {
         // secondaryBg: 'azure',
         primaryBg: 'rgb(246, 248, 255)',
-        whitebg: 'rgb(255, 255, 255)',
+        whitebg: '#3463bb',
         // midDark: '#151515', //# 242424
         fontWhite: 'rgba(255, 255, 255)',
         // white: '#fff',

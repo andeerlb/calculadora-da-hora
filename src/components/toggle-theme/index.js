@@ -1,6 +1,7 @@
 import React from 'react'
 import { WiDaySunny } from 'react-icons/wi';
 import { Styled } from '../../styles';
+import { useThemeProvider } from '../../contexts/theme-context';
 
 function CustomButton({ customName = '', Icon, size, onClick = () => { } }) {
     return (
@@ -11,11 +12,14 @@ function CustomButton({ customName = '', Icon, size, onClick = () => { } }) {
     )
 }
 export function ToggleTheme() {
+    const { toggleTheme } = useThemeProvider();
+
     return (
         <CustomButton
             Icon={WiDaySunny}
             size={22}
-        >index</CustomButton>
+            onClick={toggleTheme}
+        />
     )
 }
 
