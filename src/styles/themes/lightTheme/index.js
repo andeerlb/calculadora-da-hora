@@ -1,6 +1,7 @@
 export const LightTheme = {
     colors: {
-        primaryBg: 'azure',
-        secondaryBg: 'rgb(248, 246, 255)',
+        secondaryBg: 'azure',
+        primaryBg: 'rgb(246, 248, 255)',
+        whitebg: 'rgb(255, 255, 255)',
     }
 }

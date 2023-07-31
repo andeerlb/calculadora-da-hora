@@ -1,7 +1,8 @@
 import { ThemeProvider } from 'styled-components';
 import { Header } from './components/header';
-import { GlobalStyles } from './styles/global-styles';
-import { LightTheme } from './styles/themes';
+
+import { GlobalStyles, LightTheme } from './styles';
+
 
 function App() {
   return (

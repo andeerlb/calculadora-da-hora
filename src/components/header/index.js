@@ -1,12 +1,11 @@
 import React from 'react'
+import { Styled } from '../../styles'
 
 export function Header() {
     return (
-        <div>
-            <header>
-                hey
-            </header>
-        </div>
+        <Styled.Header>
+            hey
+        </Styled.Header>
     )
 }
 
