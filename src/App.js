@@ -1,9 +1,14 @@
-import './App.css';
+import { ThemeProvider } from 'styled-components';
+import { Header } from './components/header';
+import { GlobalStyles } from './styles/global-styles';
+import { LightTheme } from './styles/themes';
 
 function App() {
   return (
-    <div className="App">
-    </div>
+    <ThemeProvider theme={LightTheme}>
+      <GlobalStyles />
+      <Header />
+    </ThemeProvider>
   );
 }
 
