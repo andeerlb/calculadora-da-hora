@@ -9,12 +9,14 @@ export const Header = styled.header`
     border-bottom: solid 1px ${props => props.theme.colors.softGray};
     height: 75px;
     overflow: hidden;
-    #teste{
+
+    span:nth-child(2){
         display: flex;
         align-items: center;
         overflow: hidden;
         height: inherit;
     }
+
     ul{
         display: flex;
         gap: 1rem;
@@ -25,17 +27,22 @@ export const Header = styled.header`
             display: flex;
             align-items: center;
             justify-content: center;
-            
+
+            .current{
+               font-weight: bolder;
+            }
             a{
                 padding: .5rem;
             }
+
+           
         }
 
-        li:hover{
+        /* li:hover{
             background-color: ${props => props.theme.colors.softBlue};
             transition: ease-in-out .2s;
             border-radius: 5px;
-        }
+        } */
 
     }
     div{

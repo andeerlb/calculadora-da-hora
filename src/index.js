@@ -2,7 +2,6 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-import { MyThemeProvider } from './data/contexts/theme-context';
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import HomePage from './pages/home/HomePage';
 import HourCalculatorPage from './pages/HourCalculatorPage';
