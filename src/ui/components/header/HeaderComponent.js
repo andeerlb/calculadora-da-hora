@@ -1,18 +1,8 @@
 import React from 'react'
 import { Styled } from '../../../styles'
-import { ToggleTheme } from '../toggle-theme'
+import { ToggleTheme } from '../toggle-theme/TogglethemeComponent'
+import { Link } from 'react-router-dom';
 
-function NavBar({ pageName = 'pageName' }) {
-    return (
-        <nav>
-            <ul>
-                <li>{pageName}</li>
-                <li>{pageName}</li>
-                <li>{pageName}</li>
-            </ul>
-        </nav>
-    )
-}
 export function Header() {
     return (
         <Styled.Header>
@@ -22,9 +12,9 @@ export function Header() {
             <span id='teste'>
                 <nav>
                     <ul>
-                        <li>pageName</li>
-                        <li>pageName</li>
-                        <li>pageName</li>
+                        <li><Link to={'/home'}>Home</Link></li>
+                        <li><Link to={'/calculator'}> Calculadora</Link></li>
+                        <li><Link to={'/about'}> Sobre</Link></li>
                     </ul>
                 </nav>
                 <div />

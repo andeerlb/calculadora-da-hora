@@ -1,9 +1,11 @@
 import * as React from "react";
 import { LightTheme, DarkTheme } from '../../../styles'
+
 const ThemeContext = React.createContext({});
 
 export function MyThemeProvider({ children }) {
     const [theme, setTheme] = React.useState(LightTheme);
+    console.log(theme);
     let name = 'maicon';
     function toggleTheme() {
         if (theme === LightTheme) {
@@ -24,6 +26,6 @@ export function MyThemeProvider({ children }) {
 };
 
 export function useThemeProvider() {
-    React.useContext(ThemeContext);
-    return React.useContext(ThemeContext);;
+    const { toggleTheme, theme, name } = React.useContext(ThemeContext);
+    return { toggleTheme, theme, name };
 }

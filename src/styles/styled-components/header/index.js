@@ -16,15 +16,21 @@ export const Header = styled.header`
         height: inherit;
     }
     ul{
-        width: 100%;
         display: flex;
-        gap: 2rem;
+        gap: 1rem;
         
         li{
             font-weight: 500;
             cursor: pointer;
-            padding:  1rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            
+            a{
+                padding: .5rem;
+            }
         }
+
         li:hover{
             background-color: ${props => props.theme.colors.softBlue};
             transition: ease-in-out .2s;
