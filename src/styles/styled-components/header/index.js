@@ -29,7 +29,7 @@ export const Header = styled.header`
             justify-content: center;
 
             .current{
-               font-weight: bolder;
+               box-shadow: 0 2px 0px ${props => props.theme.colors.softBlue};
             }
             a{
                 padding: .5rem;
@@ -38,11 +38,11 @@ export const Header = styled.header`
            
         }
 
-        /* li:hover{
+         /* li:hover{
             background-color: ${props => props.theme.colors.softBlue};
             transition: ease-in-out .2s;
             border-radius: 5px;
-        } */
+        }  */
 
     }
     div{

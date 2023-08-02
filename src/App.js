@@ -1,4 +1,3 @@
-
 import { Header } from './ui/components/header/HeaderComponent';
 import { GlobalStyles, LightTheme } from './styles';
 import { Container } from './ui/components/container/ContainerComponent';
@@ -7,16 +6,16 @@ import { MyThemeProvider, useThemeProvider } from './data/contexts/theme-context
 
 function App() {
   const { theme } = useThemeProvider();
-  console.log(theme);
+
   return (
-    <MyThemeProvider>
-      <ThemeProvider theme={LightTheme}>
+    <ThemeProvider theme={LightTheme}>
+      <MyThemeProvider>
         <GlobalStyles />
         <Container>
           <Header />
         </Container>
-      </ThemeProvider>
-    </MyThemeProvider>
+      </MyThemeProvider>
+    </ThemeProvider>
   );
 }
 

@@ -5,8 +5,7 @@ const ThemeContext = React.createContext({});
 
 export function MyThemeProvider({ children }) {
     const [theme, setTheme] = React.useState(LightTheme);
-    console.log(theme);
-    let name = 'maicon';
+
     function toggleTheme() {
         if (theme === LightTheme) {
             setTheme(DarkTheme);
@@ -18,7 +17,6 @@ export function MyThemeProvider({ children }) {
         <ThemeContext.Provider value={{
             toggleTheme,
             theme,
-            name
         }}>
             {children}
         </ThemeContext.Provider>
@@ -26,6 +24,6 @@ export function MyThemeProvider({ children }) {
 };
 
 export function useThemeProvider() {
-    const { toggleTheme, theme, name } = React.useContext(ThemeContext);
-    return { toggleTheme, theme, name };
+    const { toggleTheme, theme } = React.useContext(ThemeContext);
+    return { toggleTheme, theme };
 }
