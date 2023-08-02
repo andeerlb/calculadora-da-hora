@@ -17,8 +17,8 @@ export function Header() {
                     <ul>
                         <li><Link to={'/'} className={isCurrentPath('/') ? 'current' : 'regular'}>Home</Link></li>
                         <li><Link to={'/calculator'} className={isCurrentPath('/calculator') ? 'current' : 'regular'}> Calculadora</Link></li>
-                        <li><Link to={'/about'} className={isCurrentPath('/about') ? 'current' : 'regular'}> Sobre</Link></li>
                         <li><Link to={'/tip-calculator'} className={isCurrentPath('/tip-calculator') ? 'current' : 'regular'}> Tip calculator</Link></li>
+                        <li><Link to={'/about'} className={isCurrentPath('/about') ? 'current' : 'regular'}> Sobre</Link></li>
                     </ul>
                 </nav>
                 <div />
