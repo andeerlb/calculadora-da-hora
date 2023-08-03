@@ -1,5 +1,5 @@
-import React from 'react'
-import { BsSun, BsMoonFill } from "react-icons/bs";
+import React from 'react';
+import { BsSun, BsMoonFill } from 'react-icons/bs';
 import { LightTheme, Styled } from '../../../styles';
 import { useThemeProvider } from '../../../data/contexts/theme-context';
 
@@ -9,7 +9,7 @@ function CustomButton({ customName = '', Icon, size, onClick = () => { } }) {
             {customName}
             {Icon ? <Icon size={size} /> : <></>}
         </Styled.Button>
-    )
+    );
 }
 export function ToggleTheme() {
     const { toggleTheme, theme } = useThemeProvider();
@@ -20,6 +20,6 @@ export function ToggleTheme() {
             size={22}
             onClick={toggleTheme}
         />
-    )
+    );
 }
 

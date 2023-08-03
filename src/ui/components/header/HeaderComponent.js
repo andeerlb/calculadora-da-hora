@@ -1,12 +1,11 @@
-import React from 'react'
-import { Styled } from '../../../styles'
-import { ToggleTheme } from '../toggle-theme/TogglethemeComponent'
+import * as React from 'react';
+import { Styled } from '../../../styles';
+import { ToggleTheme } from '../toggle-theme/TogglethemeComponent';
 import { Link } from 'react-router-dom';
 import { usePath } from '../../../data/hooks/PathHook';
 
 function NavigationMenu() {
     const { isCurrentPath } = usePath();
-    console.log(isCurrentPath('/') ? 'sim' : 'nao');
 
     return (
         <>
@@ -18,10 +17,8 @@ function NavigationMenu() {
                     <li><Link to={'/about'} className={isCurrentPath('/about') ? 'current' : 'regular'}> Sobre</Link></li>
                 </ul>
             </nav>
-            <div />
         </>
-    )
-
+    );
 }
 export function Header() {
     return (
@@ -32,6 +29,5 @@ export function Header() {
             <NavigationMenu />
             <ToggleTheme />
         </Styled.Header>
-    )
+    );
 }
-
