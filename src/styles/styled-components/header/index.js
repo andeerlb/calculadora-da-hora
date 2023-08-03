@@ -4,7 +4,7 @@ export const Header = styled.header`
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: ${props => props.theme.colors.whitebg};
+    background-color: ${props => props.theme.colors.primaryBg};
     border-bottom: solid 1px ${props => props.theme.colors.softGray};
     height: 75px;
     position: relative;
