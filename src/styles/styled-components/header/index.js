@@ -10,7 +10,7 @@ export const Header = styled.header`
     height: 75px;
     overflow: hidden;
 
-    span:nth-child(2){
+    nav{
         display: flex;
         align-items: center;
         overflow: hidden;
