@@ -9,27 +9,40 @@ export const Header = styled.header`
     border-bottom: solid 1px ${props => props.theme.colors.softGray};
     height: 75px;
     overflow: hidden;
-    #teste{
+
+    span:nth-child(2){
         display: flex;
         align-items: center;
         overflow: hidden;
         height: inherit;
     }
+
     ul{
-        width: 100%;
         display: flex;
-        gap: 2rem;
+        gap: 1rem;
         
         li{
             font-weight: 500;
             cursor: pointer;
-            padding:  1rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            .current{
+               box-shadow: 0 2px 0px ${props => props.theme.colors.softBlue};
+            }
+            a{
+                padding: .5rem;
+            }
+
+           
         }
-        li:hover{
+
+         /* li:hover{
             background-color: ${props => props.theme.colors.softBlue};
             transition: ease-in-out .2s;
             border-radius: 5px;
-        }
+        }  */
 
     }
     div{
