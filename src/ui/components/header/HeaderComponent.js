@@ -16,6 +16,7 @@ function NavigationMenu() {
                     <li><Link to={'/tip-calculator'} className={isCurrentPath('/tip-calculator') ? 'current' : 'regular'}> Tip calculator</Link></li>
                     <li><Link to={'/about'} className={isCurrentPath('/about') ? 'current' : 'regular'}> Sobre</Link></li>
                 </ul>
+                <ToggleTheme />
             </nav>
         </>
     );
@@ -24,10 +25,8 @@ export function Header() {
     return (
         <Styled.Header>
             <span>
-                calculadora-da-hora_Logo
             </span>
             <NavigationMenu />
-            <ToggleTheme />
         </Styled.Header>
     );
 }

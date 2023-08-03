@@ -5,10 +5,12 @@ import { useThemeProvider } from '../../../data/contexts/theme-context';
 
 function CustomButton({ customName = '', Icon, size, onClick = () => { } }) {
     return (
-        <Styled.Button onClick={onClick}>
-            {customName}
-            {Icon ? <Icon size={size} /> : <></>}
-        </Styled.Button>
+        <>
+            <Styled.Button onClick={onClick}>
+                {customName}
+                {Icon ? <Icon size={size} /> : <></>}
+            </Styled.Button>
+        </>
     );
 }
 export function ToggleTheme() {

@@ -4,14 +4,13 @@ export const Header = styled.header`
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 100%;
     background-color: ${props => props.theme.colors.whitebg};
     border-bottom: solid 1px ${props => props.theme.colors.softGray};
     height: 75px;
     position: relative;
 
     >span{
-        display: none;
+        display: block;
     }
 
     nav{
@@ -19,6 +18,7 @@ export const Header = styled.header`
         align-items: center;
         overflow: hidden;
         height: inherit;
+        gap: 50px;
     }
 
     ul{
