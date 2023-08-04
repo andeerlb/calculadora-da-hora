@@ -2,11 +2,11 @@ import { styled } from 'styled-components';
 
 export const Header = styled.header`
     display: flex;
-    align-items: center;
+    align-self: center;
     justify-content: center;
     background-color: ${props => props.theme.colors.primaryBg};
     border-bottom: solid 1px ${props => props.theme.colors.softGray};
-    height: 75px;
+    height: 70px;
     position: relative;
 
     >span{
@@ -36,7 +36,7 @@ export const Header = styled.header`
                box-shadow: 0 2px ${props => props.theme.colors.softBlue};
             }
             a{
-                padding: .5rem;
+                padding: 1.4rem .5rem;
             }
         }
     }
