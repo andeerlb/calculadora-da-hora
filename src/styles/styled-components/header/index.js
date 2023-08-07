@@ -6,7 +6,7 @@ export const Header = styled.header`
     justify-content: center;
     background-color: ${props => props.theme.colors.primaryBg};
     border-bottom: solid 1px ${props => props.theme.colors.softGray};
-    height: 70px;
+    height: 60px;
     position: relative;
 
     >span{
@@ -35,8 +35,9 @@ export const Header = styled.header`
             .current{
                box-shadow: 0 2px ${props => props.theme.colors.softBlue};
             }
+            
             a{
-                padding: 1.4rem .5rem;
+                padding: 1.1rem .5rem;
             }
         }
     }

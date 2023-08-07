@@ -24,8 +24,7 @@ function NavigationMenu() {
 export function Header() {
     return (
         <Styled.Header>
-            <span>
-            </span>
+            <span />
             <NavigationMenu />
         </Styled.Header>
     );
