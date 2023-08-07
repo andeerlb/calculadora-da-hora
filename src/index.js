@@ -16,14 +16,14 @@ root.render(
     <BrowserRouter>
       <MyThemeProvider>
         <App />
-        <Routes>
-          <Route path='/' element={<HomePage />} />
-          <Route path='/calculator' element={<HourCalculatorPage />} />
-          <Route path='/about' element={<About />} />
-          <Route path='/tip-calculator' element={<TipCalulator />} />
-          <Route path='/*' element={<NotFoundPage />} />
-        </Routes>
       </MyThemeProvider>
+      <Routes>
+        <Route path='/' element={<HomePage />} />
+        <Route path='/calculator' element={<HourCalculatorPage />} />
+        <Route path='/about' element={<About />} />
+        <Route path='/tip-calculator' element={<TipCalulator />} />
+        <Route path='/*' element={<NotFoundPage />} />
+      </Routes>
     </BrowserRouter>
   </React.StrictMode >
 );
