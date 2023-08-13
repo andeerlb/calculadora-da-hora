@@ -1,4 +1,4 @@
-import { createGlobalStyle } from "styled-components";
+import { createGlobalStyle } from 'styled-components';
 
 export const GlobalStyles = createGlobalStyle`
     *{
@@ -7,12 +7,13 @@ export const GlobalStyles = createGlobalStyle`
         box-sizing: border-box;
         list-style: none;
         font-family: 'Plus Jakarta Sans', sans-serif;
-        color: ${props => props.theme.colors.fontWhite};
+        color: ${props => props.theme.colors.font};
     }
 
     body{
+        background-color: ${props => props.theme.colors.primaryBg};
         a{
             text-decoration: none;
         }
     }
-`
+`;
